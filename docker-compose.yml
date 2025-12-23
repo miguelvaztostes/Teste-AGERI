@@ -5,8 +5,8 @@ services:
     environment:
       - COLLECTOR_OTLP_ENABLED=true
     ports:
-      - "16686:16686"   # Jaeger UI
-      # não exponha 4317/4318 do Jaeger no host pra evitar conflito com o collector
+      - "16686:16686"   
+    
     networks:
       - ageri
     restart: unless-stopped
@@ -18,10 +18,10 @@ services:
     volumes:
       - ./otel-collector/otel-collector.yml:/etc/otelcol-contrib/otel-collector.yml:ro
     ports:
-      - "14317:4317"    # OTLP gRPC (host->collector)
-      - "14318:4318"    # OTLP HTTP (host->collector)
-      - "8889:8889"     # Prometheus scrape endpoint
-      - "13133:13133"   # Health check
+      - "14317:4317"    
+      - "14318:4318"    
+      - "8889:8889"    
+      - "13133:13133"   
     depends_on:
       - jaeger
     networks:

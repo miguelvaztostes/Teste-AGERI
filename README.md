@@ -1,4 +1,4 @@
-# AGERI - OpenTelemetry Challenge (Client API → Server API → External API)
+# AGERI - Teste (Client API → Server API → External API)
 
 Este projeto implementa duas APIs instrumentadas com **OpenTelemetry** (traces, logs e metrics), com **propagação de contexto** entre:
 

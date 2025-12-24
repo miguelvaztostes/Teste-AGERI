@@ -46,8 +46,6 @@ chama API externa: https://jsonplaceholder.typicode.com/users
 Jaeger (Traces)
 
 UI: http://localhost:16686
-<img width="1429" height="800" alt="image" src="https://github.com/user-attachments/assets/b66d6ee6-13c3-45b5-9fce-a155a4dec371" />
-
 
 Procure pelos serviços:
 
@@ -58,8 +56,6 @@ server-api
 Prometheus (Metrics)
 
 UI: http://localhost:9090
-<img width="1433" height="804" alt="image" src="https://github.com/user-attachments/assets/9e2d5543-28f8-40aa-9d5a-bbc75186ec5c" />
-
 
 Targets: http://localhost:9090/targets
 

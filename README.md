@@ -21,11 +21,9 @@ A telemetria é enviada via **OTLP** para um **OpenTelemetry Collector**, que:
 ## 🚀 Como rodar
 
 Na raiz do projeto:
-
+```bash
 Teste-AGERI-main:
 cd Teste-AGERI-main
-
-```bash
 docker compose up -d --build
 
 
@@ -89,27 +87,20 @@ Veja metrics no Prometheus
 
 📊 Queries de exemplo (Prometheus)
 
-Ver o que chegou do collector (geral)
+- Ver o que chegou do collector:
 
 {__name__=~".+"}
 
-
-(vai vir muita coisa)
-
-(C) Ver suas métricas custom (as APIs)
+- Ver suas métricas custom:
 
 sum(rate(ageri_requests_total[1m])) by (route, service)
 
 
-(D) Ver chamadas externas medidas no server-api
+- Ver chamadas externas medidas no server-api:
 
 sum(rate(ageri_external_calls_total[1m])) by (host, method)
 
-
-(E) Latência via buckets (se aparecer o histogram)
-
-Você mostrou que apareceu *_duration_milliseconds_bucket, então:
-
+- Latência via buckets:
 {__name__=~".*duration.*bucket"}
 
 📌 Portas usadas

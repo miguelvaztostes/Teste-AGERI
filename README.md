@@ -22,6 +22,9 @@ A telemetria é enviada via **OTLP** para um **OpenTelemetry Collector**, que:
 
 Na raiz do projeto:
 
+Teste-AGERI-main:
+cd Teste-AGERI-main
+
 ```bash
 docker compose up -d --build
 
